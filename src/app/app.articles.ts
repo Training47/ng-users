@@ -1,4 +1,4 @@
-export class Articles{
+export class Article{
     _id: string;
     email: string;
     first_name: string;
