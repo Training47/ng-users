@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { UserViewComponent } from './user-view/user-view.component';
 import { UserCreateComponent } from './user-create/user-create.component';
-
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,6 +19,7 @@ import { UserCreateComponent } from './user-create/user-create.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
 
   ],
   providers: [],
