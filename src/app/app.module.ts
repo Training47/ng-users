@@ -10,6 +10,7 @@ import { FormsModule }   from '@angular/forms';
 import { UserEditComponent } from './user-edit/user-edit.component';
 import { ArticlesComponent } from './articles/articles.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { ArticlesComponent } from './articles/articles.component';
     UserViewComponent,
     UserCreateComponent,
     UserEditComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    
   ],
   imports: [
     BrowserModule,
