@@ -5,15 +5,9 @@
   <div *ngIf="errorMessage">{{errorMessage}}</div>
   
   <div>
-    <label for="articlename">Title</label>
-    <input [(ngModel)]="article.articlename" type="text" name="articlename" id="articlename">
-    <div *ngIf="errors.articlename">{{errors.articlename.message}}</div>
-  </div>
-
-  <div>
-    <label for="body">Body</label>
-    <input [(ngModel)]="article.body" type="text" name="body" id="body">
-    <div *ngIf="errors.body">{{errors.body.message}}</div>
+    <label for="title">Title</label>
+    <input [(ngModel)]="article.title" type="text" name="title" id="title">
+    <div *ngIf="errors.title">{{errors.title.message}}</div>
   </div>
 
   <div>
@@ -27,13 +21,9 @@
   </div>
 
   <div>
-    <label for="created">Created</label>
-    <input [(ngModel)]="article.created" type="text" name="created" id="created">
-  </div>
-
-  <div>
-    <label for="modified">Modified</label>
-    <input [(ngModel)]="article.modified" type="text" name="modified" id="modified">
+    <label for="body">Body</label>
+    <input [(ngModel)]="article.body" type="text" name="body" id="body">
+    <div *ngIf="errors.body">{{errors.body.message}}</div>
   </div>
 
   <div>
@@ -41,7 +31,7 @@
     <input [(ngModel)]="article.published" type="text" name="published" id="published">
   </div>
 
-  
+    
   <button type="submit">Submit</button>
 
 </form>
