@@ -28,6 +28,7 @@ export class ArticleEditComponent implements OnInit {
     const id = this.route.snapshot.paramMap.get('id');
     this.getArticle(id);
   }
+  
   getArticle(id): void {
     this.articlesService.getArticle(id).subscribe(
       (response:any) => {

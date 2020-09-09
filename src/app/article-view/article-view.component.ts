@@ -15,9 +15,10 @@ export class ArticleViewComponent implements OnInit {
   article: Article;
 
   constructor(
-    private route: ActivatedRoute,
+    private articlesService: ArticlesService,
     private router: Router,
-    private articlesService: ArticlesService
+    private route: ActivatedRoute
+    
   ) { }
 
   ngOnInit() {
@@ -31,5 +32,12 @@ export class ArticleViewComponent implements OnInit {
         this.article = response.article
       }
     );
+  }
+  deleteArticle(id: string): void {
+    if(confirm("Are you sure to delete " + this.article.title)) {
+      this.articlesService.deleteArticle(id).subscribe(
+        ()=>{this.router.navigate(['/articles'])}
+      );
+    }
   }
 }

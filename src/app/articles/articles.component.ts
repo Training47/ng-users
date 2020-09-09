@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { ArticlesService } from '../articles.service';
 
 // 2. Import the User Object/Schema
-import { Article} from '../article';
+import { Article } from '../article';
 
 @Component({
   selector: 'app-articles',
@@ -29,8 +29,8 @@ export class ArticlesComponent implements OnInit {
     this.articlesService.getArticles().subscribe(
       (response:any) => {
         this.articles = response.articles
-        console.log(this.articles)
-      }
+      //   console.log(this.articles)
+       }
     );
   }
 }
