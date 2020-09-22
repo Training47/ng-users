@@ -1,11 +1,4 @@
 import { NgModule } from '@angular/core';
-<<<<<<< HEAD
-import { UserViewComponent }   from './user-view/user-view.component';
-import { UserCreateComponent }   from './user-create/user-create.component';
-import { UserEditComponent }   from './user-edit/user-edit.component';
-import { ArticlesComponent }   from './articles/articles.component';
-=======
->>>>>>> article
 
 // 1. Routing Libraries
 import { RouterModule, Routes } from '@angular/router';
@@ -31,16 +24,11 @@ const routes: Routes = [
   { path: 'users/view/:id', component: UserViewComponent },
   { path: 'users/create', component: UserCreateComponent },
   { path: 'users/edit/:id', component: UserEditComponent },
-<<<<<<< HEAD
-  { path: 'articles', component: ArticlesComponent }
-];
-=======
   { path: 'articles', component: ArticlesComponent },
   { path: 'articles/view/:id', component: ArticleViewComponent },
   { path: 'articles/create', component: ArticleCreateComponent },
   { path: 'articles/edit/:id', component: ArticleEditComponent }
  ];
->>>>>>> article
 
 
 @NgModule({

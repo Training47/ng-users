@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-<h1>Users</h1>
-<ul *ngIf="users">
-  <li *ngFor="let user of users">
-    <a [routerLink]="['/users/view/', user._id]">{{user.username}}</a>
-=======
 <h1>Articles</h1>
 <ul *ngIf="articles">
   <li *ngFor="let article of articles">
@@ -11,6 +5,5 @@
     <a>{{ article.keywords }}</a><br>
     <a>{{ article.body }}</a><br>
     <hr>
->>>>>>> article
   </li>
 </ul>

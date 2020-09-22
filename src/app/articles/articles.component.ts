@@ -1,14 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
-<<<<<<< HEAD
-=======
 // 1. Import the UserService
 import { ArticlesService } from '../articles.service';
 
 // 2. Import the User Object/Schema
 import { Article } from '../article';
 
->>>>>>> article
 @Component({
   selector: 'app-articles',
   templateUrl: './articles.component.html',
@@ -16,14 +13,6 @@ import { Article } from '../article';
 })
 export class ArticlesComponent implements OnInit {
 
-<<<<<<< HEAD
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
-=======
   // 3. Create a users property of type articles
   articles: Article[];
 
@@ -45,4 +34,3 @@ export class ArticlesComponent implements OnInit {
     );
   }
 }
->>>>>>> article
