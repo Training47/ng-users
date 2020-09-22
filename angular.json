@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ng-users"
+    }
+  },
+  "defaultProject": "ng-users",
+  "cli": {
+    "analytics": false
+  }
 }

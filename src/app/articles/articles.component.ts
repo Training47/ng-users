@@ -1,5 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
+<<<<<<< HEAD
+=======
+// 1. Import the UserService
+import { ArticlesService } from '../articles.service';
+
+// 2. Import the User Object/Schema
+import { Article } from '../article';
+
+>>>>>>> article
 @Component({
   selector: 'app-articles',
   templateUrl: './articles.component.html',
@@ -7,9 +16,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticlesComponent implements OnInit {
 
+<<<<<<< HEAD
   constructor() { }
 
   ngOnInit(): void {
   }
 
 }
+=======
+  // 3. Create a users property of type articles
+  articles: Article[];
+
+  // 4. Inject the UsersService into the constructor
+  constructor(private articlesService: ArticlesService) { }
+
+  // 6. Make a call to the service on initialization
+  ngOnInit() {
+    this.getArticles();
+  }
+
+  // 5. Create a local wrapper for
+  getArticles(): void {
+    this.articlesService.getArticles().subscribe(
+      (response:any) => {
+        this.articles = response.articles
+      //   console.log(this.articles)
+       }
+    );
+  }
+}
+>>>>>>> article

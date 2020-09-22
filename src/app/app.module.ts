@@ -9,7 +9,13 @@ import { UserCreateComponent } from './user-create/user-create.component';
 import { FormsModule }   from '@angular/forms';
 import { UserEditComponent } from './user-edit/user-edit.component';
 import { ArticlesComponent } from './articles/articles.component';
+<<<<<<< HEAD
 
+=======
+import { ArticleViewComponent } from './article-view/article-view.component';
+import { ArticleCreateComponent } from './article-create/article-create.component';
+import { ArticleEditComponent } from './article-edit/article-edit.component';
+>>>>>>> article
 
 @NgModule({
   declarations: [
@@ -19,7 +25,13 @@ import { ArticlesComponent } from './articles/articles.component';
     UserCreateComponent,
     UserEditComponent,
     ArticlesComponent,
+<<<<<<< HEAD
     
+=======
+    ArticleViewComponent,
+    ArticleCreateComponent,
+    ArticleEditComponent
+>>>>>>> article
   ],
   imports: [
     BrowserModule,
